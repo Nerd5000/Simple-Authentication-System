@@ -26,9 +26,9 @@ def secret():
 
 @app.route('/')
 def main():
-    # from models.user import User
-    # from models.blockedJWT import BlockedJWT
-    # db.create_all()
+    from models.user import User
+    from models.blockedJWT import BlockedJWT
+    db.create_all()
     return 'Hello, World!'
 
 
